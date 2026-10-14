@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bei Zhang</title>
+<meta name="description" content="Bei Zhang, M.S. candidate at Tianjin University working on atmospheric chemistry, aerosols and Earth system modeling with CESM. Seeking a fully funded PhD position from September 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --ink:#1c2230; --muted:#5b6475; --line:#e4e1d8;
+  --accent:#1f5f8b; --accent-soft:#e8f0f6; --tag:#f1efe8;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:Inter, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13161c; --surface:#1a1e26; --ink:#e6e8ec; --muted:#9aa3b2; --line:#2b313c;
+    --accent:#7db6dd; --accent-soft:#1d2a36; --tag:#232833;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13161c; --surface:#1a1e26; --ink:#e6e8ec; --muted:#9aa3b2; --line:#2b313c;
+  --accent:#7db6dd; --accent-soft:#1d2a36; --tag:#232833;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .inner{max-width:880px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:20px;height:52px;overflow-x:auto;white-space:nowrap}
+nav .brand{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:17px;margin-right:auto}
+nav a.link{color:var(--muted);font-size:14px;font-weight:500}
+nav a.link:hover{color:var(--accent);text-decoration:none}
+
+main{max-width:880px;margin:0 auto;padding:0 20px 64px}
+
+/* hero */
+.hero{display:flex;gap:28px;align-items:flex-start;padding:48px 0 36px;border-bottom:1px solid var(--line)}
+.avatar{flex:0 0 132px;height:132px;border-radius:50%;overflow:hidden;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:44px;font-weight:600;color:var(--accent);border:1px solid var(--line)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+h1{font-family:var(--serif);font-size:40px;line-height:1.15;margin:0 0 6px;font-weight:700;letter-spacing:-.01em}
+.role{color:var(--muted);margin:0 0 14px;font-size:16px}
+.status{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:14px;padding:6px 12px;border-radius:6px;margin-bottom:16px}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:14px;font-weight:500;padding:7px 13px;border-radius:6px}
+.btn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.btn svg{width:15px;height:15px}
+
+/* sections */
+section{padding:36px 0 8px}
+h2{font-family:var(--serif);font-size:26px;margin:0 0 18px;font-weight:700}
+h3{font-family:var(--serif);font-size:19px;margin:0 0 4px;font-weight:600}
+p{margin:0 0 14px}
+.lead{font-size:17px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+
+/* interests */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 4px}
+.tag{background:var(--tag);color:var(--ink);font-size:13.5px;padding:4px 11px;border-radius:999px}
+
+/* pipeline */
+.pipeline{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;margin:8px 0 26px}
+.step{flex:1 1 140px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:14px;line-height:1.4}
+.step b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.step.future{border-style:dashed;background:transparent}
+.arrow{flex:0 0 22px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px}
+
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin-bottom:16px}
+.card .meta{color:var(--muted);font-size:14px;margin-bottom:12px}
+.card ul{margin:0;padding-left:20px}
+.card li{margin-bottom:6px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0 4px}
+.stat{border-top:2px solid var(--accent);padding-top:8px}
+.stat .n{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--muted);line-height:1.35}
+
+/* publications */
+.pub{padding:16px 0;border-bottom:1px solid var(--line)}
+.pub:last-child{border-bottom:none}
+.pub.featured{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:18px 20px;margin-bottom:8px}
+.pub .title{font-family:var(--serif);font-size:17.5px;font-weight:600;line-height:1.4;margin-bottom:4px}
+.pub .authors{font-size:14.5px;color:var(--muted)}
+.pub .authors strong{color:var(--ink)}
+.pub .venue{font-size:14.5px;font-style:italic}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent);margin-right:6px;font-style:normal}
+.badge.grey{background:var(--tag);color:var(--muted)}
+.pub .actions{margin-top:8px;font-size:14px;display:flex;gap:16px;flex-wrap:wrap}
+
+/* timeline rows */
+.row{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:none}
+.row .when{color:var(--muted);font-size:14px;padding-top:2px}
+.row ul{margin:6px 0 0;padding-left:20px;font-size:15px}
+.row li{margin-bottom:4px}
+
+.skills{display:grid;grid-template-columns:190px 1fr;gap:10px 20px;font-size:15px}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--ink)}
+
+footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:680px){
+  h1{font-size:32px}
+  .hero{flex-direction:column;gap:18px;padding-top:32px}
+  .avatar{flex-basis:auto;width:96px;height:96px;font-size:32px}
+  .row{grid-template-columns:1fr;gap:2px}
+  .skills{grid-template-columns:1fr;gap:2px 0}
+  .skills dd{margin-bottom:10px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .arrow{flex-basis:100%;height:18px;transform:rotate(90deg)}
+  .step{flex-basis:100%}
+  .card{padding:18px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <span class="brand">Bei Zhang</span>
+    <a class="link" href="#about">About</a>
+    <a class="link" href="#research">Research</a>
+    <a class="link" href="#publications">Publications</a>
+    <a class="link" href="#experience">Experience</a>
+    <a class="link" href="CV_Bei_Zhang.pdf">CV</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="hero" id="about">
+  <!-- To add a photo: upload photo.jpg to the repository, then replace "BZ" below with <img src="photo.jpg" alt="Bei Zhang"> -->
+  <div class="avatar">BZ</div>
+  <div>
+    <h1>Bei Zhang</h1>
+    <p class="role">M.S. Candidate in Geography · School of Earth System Science, Tianjin University<br>Atmospheric chemistry, aerosols and Earth system modeling</p>
+    <div class="status">Seeking a fully funded PhD position starting September 2027</div>
+    <div class="links">
+      <a class="btn" href="mailto:zbei@tju.edu.cn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>zbei@tju.edu.cn</a>
+      <a class="btn" href="CV_Bei_Zhang.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>CV (PDF)</a>
+      <a class="btn" href="Thesis_Summary_Bei_Zhang.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>Thesis summary</a>
+      <a class="btn" href="https://doi.org/10.1029/2025JD045898"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>JGR paper</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <p class="lead">I am a final year M.S. student at the School of Earth System Science, Tianjin University, advised by Prof. Jialei Zhu. I work on atmospheric chemistry and Earth system modeling: building emission inventories, implementing new atmospheric processes in CESM, and testing global simulations against observations.</p>
+  <p>My first author paper in <em>JGR: Atmospheres</em> (2026) presents a global model of atmospheric amines, covering their sources, sinks and atmospheric lifetimes. I am now developing a coupled new particle formation framework in CESM, linking amine and sulfuric acid chemistry to aerosol microphysics. I am currently a research intern at UNEP headquarters in Nairobi, working on air quality impact measurement.</p>
+  <p>For my PhD, I want to carry process based model development forward from aerosol formation to aerosol cloud interactions, and to combine physical climate models with machine learning.</p>
+  <div class="tags">
+    <span class="tag">Earth system &amp; climate modeling</span>
+    <span class="tag">Aerosol microphysics</span>
+    <span class="tag">New particle formation</span>
+    <span class="tag">Aerosol cloud climate interactions</span>
+    <span class="tag">Reduced nitrogen (NH₃, amines)</span>
+    <span class="tag">Machine learning for climate models</span>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <p class="muted small">My master's thesis follows the full modeling workflow, from emissions to aerosol formation.</p>
+
+  <div class="pipeline" aria-label="Research workflow">
+    <div class="step"><b>Emissions</b>Global gridded inventory for MMA, DMA, TMA</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>Chemistry</b>Amine tracers and sinks in CESM/IMPACT</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>Evaluation</b>27 observation sites, source attribution</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>Aerosol</b>Coupled new particle formation module</div>
+    <div class="arrow">→</div>
+    <div class="step future"><b>Next</b>Aerosol cloud interactions, ML</div>
+  </div>
+
+  <div class="card">
+    <h3>Stage I · Global modeling of atmospheric amines</h3>
+    <div class="meta">Sep 2024 – 2026 · Published in <em>JGR: Atmospheres</em></div>
+    <ul>
+      <li>Built a global emission inventory for methylamine (MMA), dimethylamine (DMA) and trimethylamine (TMA), combining six anthropogenic sectors with a new marine biogenic source based on air sea exchange.</li>
+      <li>Implemented the three amines as tracers in CESM 1.2.2 with the IMPACT aerosol module, adding OH oxidation, wet and dry deposition, and heterogeneous aerosol uptake.</li>
+      <li>Designed seven source attribution experiments and a source sink budget analysis; evaluated simulations against observations from urban, agricultural, forest, coastal, marine and polar sites.</li>
+    </ul>
+    <div class="stats">
+      <div class="stat"><div class="n">27</div><div class="l">global observation sites</div></div>
+      <div class="stat"><div class="n">~98%</div><div class="l">of global TMA emissions from the ocean</div></div>
+      <div class="stat"><div class="n">3–5 h</div><div class="l">simulated amine lifetimes</div></div>
+      <div class="stat"><div class="n">7</div><div class="l">source attribution experiments</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Stage II · New particle formation in CESM</h3>
+    <div class="meta">Feb 2026 – present · Manuscript in preparation</div>
+    <ul>
+      <li>Adapted the CMAN framework from E3SM to CESM 1.2.2, writing Fortran interfaces between sulfur chemistry and aerosol microphysics (species and tracer mapping, unit conversion, array mapping).</li>
+      <li>Integrated amine and sulfuric acid nucleation, precursor consumption, particle number and mass allocation, coagulation and modal transfer; extended it to MMA, DMA and TMA nucleation using ACDC based parameterizations from the literature.</li>
+      <li>The coupled framework compiles and runs; current work validates mass and number conservation and process routing through diagnostics and controlled sensitivity simulations.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+
+  <div class="pub featured">
+    <div class="title"><a href="https://doi.org/10.1029/2025JD045898">Global modeling of atmospheric amines: Sources and sinks</a></div>
+    <div class="authors"><strong>Zhang, B.</strong>, Guo, Q., Sun, Y., Cui, L., &amp; Zhu, J.</div>
+    <div class="venue"><span class="badge">First author</span>Journal of Geophysical Research: Atmospheres, 131(15), e2025JD045898, 2026</div>
+    <div class="actions"><a href="https://doi.org/10.1029/2025JD045898">DOI: 10.1029/2025JD045898</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">An interactive marine biogenic volatile organic compound emissions module in an Earth system model</div>
+    <div class="authors">Cui, L., <strong>Zhang, B.</strong>, Guo, Q., &amp; Zhu, J.</div>
+    <div class="venue"><span class="badge grey">In revision</span>Journal of Advances in Modeling Earth Systems</div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Ammonia emissions from penguin colonies mitigate warming in Antarctica</div>
+    <div class="authors">Co-author</div>
+    <div class="venue"><span class="badge grey">Under review</span>Proceedings of the National Academy of Sciences</div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Effects of clean fuel application on the radiative impact of ship sourced sulfate aerosols <span class="muted">[in Chinese]</span></div>
+    <div class="authors">Sun, Y., <strong>Zhang, B.</strong>, Zhao, X., &amp; Zhu, J.</div>
+    <div class="venue">Earth Science Frontiers, 32(3), 263–273, 2025</div>
+  </div>
+
+  <div class="pub">
+    <div class="title"><a href="https://doi.org/10.1016/j.ecolind.2024.112777">Urban expansion, economic development, and carbon emissions: Trends, patterns, and decoupling in mainland China's provincial capitals (1985–2020)</a></div>
+    <div class="authors">Zhao, J., Chen, W., Liu, Z., Liu, W., Li, K., <strong>Zhang, B.</strong>, Zhang, Y., Yu, L., &amp; Sakai, T.</div>
+    <div class="venue">Ecological Indicators, 169, 112777, 2024</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="row">
+    <div class="when">Sep 2026 – Nov 2026</div>
+    <div>
+      <h3>Research Intern, UN Environment Programme (UNEP HQ)</h3>
+      <div class="muted small">Policy and Programme Division · Nairobi, Kenya</div>
+      <ul>
+        <li>Screened closed project portfolios to identify air quality cases suitable for quasi experimental evaluation.</li>
+        <li>Developed and compared causal inference designs (interrupted time series, synthetic control, regression discontinuity, difference in differences) for environmental policy evaluation.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="when">2023 – 2025</div>
+    <div>
+      <h3>Research Participant, National Key R&amp;D Program of China</h3>
+      <div class="muted small">Anthropogenic organic compounds, new particle formation, and climate effects in megacities (2022YFE0135000)</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="when">2024, 2025</div>
+    <div>
+      <h3>China Postgraduate Mathematical Contest in Modeling</h3>
+      <div class="muted small">National Second Prize, two consecutive years</div>
+      <ul>
+        <li>Built Python workflows for gridded precipitation forecasting (Random Forest, ARIMA, LSTM) and a PyTorch 1D CNN / DANN transfer learning model.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="row">
+    <div class="when">Sep 2024 – Jun 2027</div>
+    <div>
+      <h3>M.S. in Geography, Tianjin University</h3>
+      <div class="muted small">School of Earth System Science · GPA 3.9/4.0 · Ranked 1st of 46 · Research focus: atmospheric chemistry and Earth system modeling</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="when">Sep 2020 – Jun 2024</div>
+    <div>
+      <h3>B.S. in Geography, Tianjin University</h3>
+      <div class="muted small">Minor in Philosophy · GPA 3.75/4.0 · Top 20%</div>
+    </div>
+  </div>
+</section>
+
+<section id="honors">
+  <h2>Honors</h2>
+  <div class="row"><div class="when">2024, 2025, 2026</div><div>First Class Scholarship, School of Earth System Science, Tianjin University</div></div>
+  <div class="row"><div class="when">2024, 2025</div><div>National Second Prize, China Postgraduate Mathematical Contest in Modeling</div></div>
+  <div class="row"><div class="when">2025</div><div>Outstanding Class Officer (University Level), Tianjin University</div></div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Earth system modeling</dt><dd>CESM, IMPACT aerosol module, Fortran source code development, process coupling, tracer and aerosol routing, numerical debugging</dd>
+    <dt>Programming</dt><dd>Fortran, Python (NumPy, pandas, scikit learn, PyTorch), MATLAB, Linux/HPC</dd>
+    <dt>Data analysis</dt><dd>NetCDF climate data, machine learning, statistics and causal inference, ArcGIS, ENVI</dd>
+    <dt>Languages</dt><dd>Chinese (native), English (IELTS 6.5, working experience in an international organization)</dd>
+  </dl>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Bei Zhang · <a href="mailto:zbei@tju.edu.cn">zbei@tju.edu.cn</a></span>
+  <span>Last updated October 2026</span>
+</footer>
+
+</body>
+</html>
