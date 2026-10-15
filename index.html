@@ -157,7 +157,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
   <p>My first author paper in <em>JGR: Atmospheres</em> (2026) presents a global model of atmospheric amines, covering their sources, sinks and atmospheric lifetimes. I am now developing a coupled new particle formation framework in CESM, linking amine and sulfuric acid chemistry to aerosol microphysics. I am currently a research intern at UNEP headquarters in Nairobi, working on air quality impact measurement.</p>
   <p>For my PhD, I want to carry process based model development forward from aerosol formation to aerosol cloud interactions, and to combine physical climate models with machine learning.</p>
   <div class="tags">
-    <span class="tag">Earth system &amp; climate modeling</span>
+    <span class="tag">Earth system and climate modeling</span>
     <span class="tag">Aerosol microphysics</span>
     <span class="tag">New particle formation</span>
     <span class="tag">Aerosol cloud climate interactions</span>
@@ -171,15 +171,15 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
   <p class="muted small">My master's thesis follows the full modeling workflow, from emissions to aerosol formation.</p>
 
   <div class="pipeline" aria-label="Research workflow">
-    <div class="step"><b>Emissions</b>Global gridded inventory for MMA, DMA, TMA</div>
+    <div class="step"><b>Emissions</b>Global inventory for MMA, DMA, TMA from six sectors and the ocean</div>
     <div class="arrow">→</div>
-    <div class="step"><b>Chemistry</b>Amine tracers and sinks in CESM/IMPACT</div>
+    <div class="step"><b>Atmospheric cycling</b>Sources, sinks and lifetimes of amines in CESM/IMPACT</div>
     <div class="arrow">→</div>
-    <div class="step"><b>Evaluation</b>27 observation sites, source attribution</div>
+    <div class="step"><b>Code development</b>CMAN nucleation framework ported from E3SM to CESM in Fortran</div>
     <div class="arrow">→</div>
-    <div class="step"><b>Aerosol</b>Coupled new particle formation module</div>
+    <div class="step"><b>Particle formation</b>Amine and sulfuric acid nucleation coupled to aerosol microphysics</div>
     <div class="arrow">→</div>
-    <div class="step future"><b>Next</b>Aerosol cloud interactions, ML</div>
+    <div class="step future"><b>Next</b>Aerosol cloud interactions and machine learning</div>
   </div>
 
   <div class="card">
@@ -206,6 +206,12 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
       <li>Integrated amine and sulfuric acid nucleation, precursor consumption, particle number and mass allocation, coagulation and modal transfer; extended it to MMA, DMA and TMA nucleation using ACDC based parameterizations from the literature.</li>
       <li>The coupled framework compiles and runs; current work validates mass and number conservation and process routing through diagnostics and controlled sensitivity simulations.</li>
     </ul>
+    <div class="stats">
+      <div class="stat"><div class="n">E3SM → CESM</div><div class="l">CMAN framework ported across model architectures</div></div>
+      <div class="stat"><div class="n">H₂SO₄ + 3</div><div class="l">nucleation pathways with MMA, DMA and TMA</div></div>
+      <div class="stat"><div class="n">Fortran</div><div class="l">interfaces linking chemistry and aerosol microphysics</div></div>
+      <div class="stat"><div class="n">Runs</div><div class="l">full coupled framework compiles and runs in CESM 1.2.2</div></div>
+    </div>
   </div>
 </section>
 
@@ -214,33 +220,33 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
 
   <div class="pub featured">
     <div class="title"><a href="https://doi.org/10.1029/2025JD045898">Global modeling of atmospheric amines: Sources and sinks</a></div>
-    <div class="authors"><strong>Zhang, B.</strong>, Guo, Q., Sun, Y., Cui, L., &amp; Zhu, J.</div>
+    <div class="authors"><strong>Zhang, B.</strong>, Guo, Q., Sun, Y., Cui, L., and Zhu, J.</div>
     <div class="venue"><span class="badge">First author</span>Journal of Geophysical Research: Atmospheres, 131(15), e2025JD045898, 2026</div>
     <div class="actions"><a href="https://doi.org/10.1029/2025JD045898">DOI: 10.1029/2025JD045898</a></div>
   </div>
 
   <div class="pub">
     <div class="title">An interactive marine biogenic volatile organic compound emissions module in an Earth system model</div>
-    <div class="authors">Cui, L., <strong>Zhang, B.</strong>, Guo, Q., &amp; Zhu, J.</div>
-    <div class="venue"><span class="badge grey">In revision</span>Journal of Advances in Modeling Earth Systems</div>
+    <div class="authors">Cui, L., et al.</div>
+    <div class="venue"><span class="badge grey">Co-author</span><span class="badge grey">In revision</span>Journal of Advances in Modeling Earth Systems</div>
   </div>
 
   <div class="pub">
     <div class="title">Ammonia emissions from penguin colonies mitigate warming in Antarctica</div>
-    <div class="authors">Co-author</div>
-    <div class="venue"><span class="badge grey">Under review</span>Proceedings of the National Academy of Sciences</div>
+    <div class="venue"><span class="badge grey">Co-author</span><span class="badge grey">Under review</span>Proceedings of the National Academy of Sciences</div>
   </div>
 
   <div class="pub">
-    <div class="title">Effects of clean fuel application on the radiative impact of ship sourced sulfate aerosols <span class="muted">[in Chinese]</span></div>
-    <div class="authors">Sun, Y., <strong>Zhang, B.</strong>, Zhao, X., &amp; Zhu, J.</div>
-    <div class="venue">Earth Science Frontiers, 32(3), 263–273, 2025</div>
+    <div class="title"><a href="https://www.earthsciencefrontiers.net.cn/CN/Y2025/V32/I3/263">Effects of clean fuel application on the radiative impact of ship sourced sulfate aerosols</a> <span class="muted">[in Chinese]</span></div>
+    <div class="authors">Sun, Y., <strong>Zhang, B.</strong>, Zhao, X., and Zhu, J.</div>
+    <div class="venue">Earth Science Frontiers (地学前缘), 32(3), 263–273, 2025</div>
+    <div class="actions"><a href="https://doi.org/10.13745/j.esf.sf.2025.3.20">DOI: 10.13745/j.esf.sf.2025.3.20</a></div>
   </div>
 
   <div class="pub">
     <div class="title"><a href="https://doi.org/10.1016/j.ecolind.2024.112777">Urban expansion, economic development, and carbon emissions: Trends, patterns, and decoupling in mainland China's provincial capitals (1985–2020)</a></div>
-    <div class="authors">Zhao, J., Chen, W., Liu, Z., Liu, W., Li, K., <strong>Zhang, B.</strong>, Zhang, Y., Yu, L., &amp; Sakai, T.</div>
-    <div class="venue">Ecological Indicators, 169, 112777, 2024</div>
+    <div class="authors">Zhao, J., Chen, W., Liu, Z., Liu, W., Li, K., <strong>Zhang, B.</strong>, Zhang, Y., Yu, L., and Sakai, T.</div>
+    <div class="venue"><span class="badge grey">Co-author</span>Ecological Indicators, 169, 112777, 2024</div>
   </div>
 </section>
 
@@ -250,7 +256,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
     <div class="when">Sep 2026 – Nov 2026</div>
     <div>
       <h3>Research Intern, UN Environment Programme (UNEP HQ)</h3>
-      <div class="muted small">Policy and Programme Division · Nairobi, Kenya</div>
+      <div class="muted small"><a href="https://wecollaborate.unep.org/pages/viewpage.action?pageId=150376912&amp;spaceKey=SPPD&amp;title=Strategic%2BPlanning%2BReporting%2Band%2BImpact%2BSection">Strategic Planning, Reporting and Impact Section</a> · Policy and Programme Division · Nairobi, Kenya</div>
       <ul>
         <li>Screened closed project portfolios to identify air quality cases suitable for quasi experimental evaluation.</li>
         <li>Developed and compared causal inference designs (interrupted time series, synthetic control, regression discontinuity, difference in differences) for environmental policy evaluation.</li>
@@ -260,7 +266,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
   <div class="row">
     <div class="when">2023 – 2025</div>
     <div>
-      <h3>Research Participant, National Key R&amp;D Program of China</h3>
+      <h3>Research Participant, National Key Research and Development Program of China</h3>
       <div class="muted small">Anthropogenic organic compounds, new particle formation, and climate effects in megacities (2022YFE0135000)</div>
     </div>
   </div>
@@ -272,6 +278,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
       <ul>
         <li>Built Python workflows for gridded precipitation forecasting (Random Forest, ARIMA, LSTM) and a PyTorch 1D CNN / DANN transfer learning model.</li>
       </ul>
+      <div class="small" style="margin-top:6px"><a href="Modeling_Competition_Report_2024.pdf">2024 competition report (PDF, English)</a></div>
     </div>
   </div>
 </section>
@@ -296,6 +303,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid
 
 <section id="honors">
   <h2>Honors</h2>
+  <div class="row"><div class="when">2026</div><div><strong>National Scholarship</strong>, Ministry of Education of China <span class="muted">(top graduate students nationwide)</span></div></div>
   <div class="row"><div class="when">2024, 2025, 2026</div><div>First Class Scholarship, School of Earth System Science, Tianjin University</div></div>
   <div class="row"><div class="when">2024, 2025</div><div>National Second Prize, China Postgraduate Mathematical Contest in Modeling</div></div>
   <div class="row"><div class="when">2025</div><div>Outstanding Class Officer (University Level), Tianjin University</div></div>
